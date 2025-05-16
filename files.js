@@ -25,8 +25,7 @@ topMenuEl.style.height = "100%"
 topMenuEl.style.backgroundColor = "var(--top-menu-bg)"
 topMenuEl.classList.add("flex-around")
 
-// Part 3
-// Menu data structure
+
 var menuLinks = [
   { text: 'about', href: '/about' },
   { text: 'catalog', href: '/catalog' },
@@ -39,3 +38,12 @@ for (let link of menuLinks) {
     a.text = link.text
     topMenuEl.appendChild(a)
 }
+
+//part 3
+
+ let subMenuEl = document.getElementById("sub-menu")
+   subMenuEl.style.height = "100%";
+   subMenuEl.style.backgroundColor = "var(--sub-menu-bg)";
+   subMenuEl.style.display = "flex"
+   subMenuEl.style.justifyContent = "space-around";
+
